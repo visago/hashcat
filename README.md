@@ -1,4 +1,4 @@
-## *hashcat* ##
+## *hashcat - Nvidia Jetson Nano Fork* ##
 
 **hashcat** is the world's fastest and most advanced password recovery utility, supporting five unique modes of attack for over 200 highly-optimized hashing algorithms. hashcat currently supports CPUs, GPUs, and other hardware accelerators on Linux, Windows, and macOS, and has facilities to help enable distributed password cracking.
 
@@ -9,6 +9,11 @@
 ### Installation ###
 
 Download the [latest release](https://hashcat.net/hashcat/) and unpack it in the desired location. Please remember to use `7z x` when unpacking the archive from the command line to ensure full file paths remain intact.
+
+### Fork Difference ###
+
+This release was forked off the mainbranch to provide a small hack to support the provided CUDA 10.0 provided by the Jetson Nano packages.
+Refer to [JetsonNano.md](JetsonNano.md) for test results.
 
 ### Usage/Help ###
 
