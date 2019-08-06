@@ -133,3 +133,127 @@ Hashmode: 11300 - Bitcoin/Litecoin wallet.dat (Iterations: 200459)
 Speed.#1.........:      104 H/s (48.72ms) @ Accel:4 Loops:256 Thr:1024 Vec:1
    
 ```
+
+Compared to an intel i7
+
+```
+hashcat64 -b --force
+
+hashcat (v5.1.0) starting in benchmark mode...
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Iris(R) Plus Graphics 650, 4095/13064 MB allocatable, 48MCU
+* Device #2: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz, skipped.
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+Hashmode: 0 - MD5
+
+Speed.#1.........:   848.9 MH/s (57.71ms) @ Accel:128 Loops:32 Thr:256 Vec:4
+
+Hashmode: 100 - SHA1
+
+Speed.#1.........:   198.1 MH/s (62.27ms) @ Accel:64 Loops:16 Thr:256 Vec:4
+
+Hashmode: 1400 - SHA2-256
+
+Speed.#1.........: 87636.7 kH/s (70.53ms) @ Accel:32 Loops:16 Thr:256 Vec:4
+
+Hashmode: 1700 - SHA2-512
+
+Speed.#1.........: 22042.4 kH/s (70.28ms) @ Accel:16 Loops:8 Thr:256 Vec:1
+
+Hashmode: 2500 - WPA-EAPOL-PBKDF2 (Iterations: 4096)
+
+Speed.#1.........:     7153 H/s (102.40ms) @ Accel:32 Loops:8 Thr:256 Vec:1
+
+Hashmode: 1000 - NTLM
+
+Speed.#1.........:  1391.2 MH/s (70.67ms) @ Accel:128 Loops:64 Thr:256 Vec:4
+
+Hashmode: 3000 - LM
+
+Speed.#1.........:   234.1 MH/s (52.74ms) @ Accel:1 Loops:1024 Thr:256 Vec:1
+
+Hashmode: 5500 - NetNTLMv1 / NetNTLMv1+ESS
+
+Speed.#1.........:   585.1 MH/s (84.05ms) @ Accel:128 Loops:32 Thr:256 Vec:4
+
+Hashmode: 5600 - NetNTLMv2
+
+Speed.#1.........:  5523.5 kH/s (70.41ms) @ Accel:8 Loops:4 Thr:256 Vec:4
+
+Hashmode: 1500 - descrypt, DES (Unix), Traditional DES
+
+Speed.#1.........:  9279.3 kH/s (1326.66ms) @ Accel:1 Loops:1024 Thr:256 Vec:1
+
+Hashmode: 500 - md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5) (Iterations: 1000)
+
+Speed.#1.........:   272.6 kH/s (79.34ms) @ Accel:256 Loops:250 Thr:8 Vec:4
+
+Hashmode: 3200 - bcrypt $2*$, Blowfish (Unix) (Iterations: 32)
+
+Speed.#1.........:     1052 H/s (85.24ms) @ Accel:4 Loops:2 Thr:8 Vec:1
+
+Hashmode: 1800 - sha512crypt $6$, SHA512 (Unix) (Iterations: 5000)
+
+Speed.#1.........:     3182 H/s (91.03ms) @ Accel:128 Loops:32 Thr:8 Vec:1
+
+Hashmode: 7500 - Kerberos 5 AS-REQ Pre-Auth etype 23
+
+Speed.#1.........:  6981.0 kH/s (55.00ms) @ Accel:16 Loops:8 Thr:64 Vec:4
+
+Hashmode: 13100 - Kerberos 5 TGS-REP etype 23
+
+Speed.#1.........:  6813.4 kH/s (56.86ms) @ Accel:16 Loops:8 Thr:64 Vec:4
+
+Hashmode: 15300 - DPAPI masterkey file v1 (Iterations: 23999)
+
+Speed.#1.........:      934 H/s (66.52ms) @ Accel:16 Loops:8 Thr:256 Vec:1
+
+Hashmode: 15900 - DPAPI masterkey file v2 (Iterations: 7999)
+
+Speed.#1.........:     1001 H/s (86.36ms) @ Accel:128 Loops:16 Thr:8 Vec:1
+
+Hashmode: 7100 - macOS v10.8+ (PBKDF2-SHA512) (Iterations: 35000)
+
+Speed.#1.........:      224 H/s (85.81ms) @ Accel:16 Loops:4 Thr:256 Vec:1
+
+Hashmode: 11600 - 7-Zip (Iterations: 524288)
+
+Speed.#1.........:       24 H/s (59.13ms) @ Accel:16 Loops:4 Thr:256 Vec:1
+
+Hashmode: 12500 - RAR3-hp (Iterations: 262144)
+
+Speed.#1.........:      573 H/s (1311.27ms) @ Accel:1 Loops:16384 Thr:256 Vec:1
+
+Hashmode: 13000 - RAR5 (Iterations: 32767)
+
+Speed.#1.........:      894 H/s (98.60ms) @ Accel:32 Loops:8 Thr:256 Vec:1
+
+Hashmode: 6211 - TrueCrypt PBKDF2-HMAC-RIPEMD160 + XTS 512 bit (Iterations: 2000)
+
+Speed.#1.........:     5760 H/s (63.99ms) @ Accel:16 Loops:4 Thr:256 Vec:1
+
+Hashmode: 13400 - KeePass 1 (AES/Twofish) and KeePass 2 (AES) (Iterations: 6000)
+
+Speed.#1.........:     5884 H/s (84.49ms) @ Accel:128 Loops:32 Thr:16 Vec:1
+
+Hashmode: 6800 - LastPass + LastPass sniffed (Iterations: 500)
+
+Speed.#1.........:    64296 H/s (82.07ms) @ Accel:16 Loops:15 Thr:256 Vec:1
+
+Hashmode: 11300 - Bitcoin/Litecoin wallet.dat (Iterations: 199999)
+
+Speed.#1.........:       99 H/s (76.62ms) @ Accel:16 Loops:8 Thr:256 Vec:1
+
+```
